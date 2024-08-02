@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Keep this as it is if you need to support older environments
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true, // Skipping library checks can resolve type definition issues
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext", // This should be fine for modern module systems
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // This prevents TypeScript from emitting output files
+    "jsx": "react-jsx" // Use "react-jsx" for React 17+ JSX transformation, if using React 16, keep it as "react"
+  },
+  "include": [
+    "src"
+  ]
+}

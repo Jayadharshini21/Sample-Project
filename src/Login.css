@@ -1,0 +1,66 @@
+/* Login.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./Bg.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: #fff; /* White background for the form */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card effect */
+    border: 1px solid #d9d9d9; /* Light border color */
+  }
+  
+  .login-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .login-form .ant-form-item-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Darker text color for labels */
+  }
+  
+  .login-form .ant-input,
+  .login-form .ant-input-password {
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-form .ant-input:focus,
+  .login-form .ant-input-password:focus {
+    border-color: #40a9ff; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); /* Soft blue shadow on focus */
+  }
+  
+  .login-form .ant-btn-primary {
+    background: #1890ff; /* Primary button color */
+    border-color: hsl(209, 100%, 55%);
+    border-radius: 2px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login-form .ant-btn-primary:hover {
+    background: #40a9ff; /* Lighter blue on hover */
+    border-color: #40a9ff;
+  }
+  
+  .login-form .ant-alert {
+    margin-bottom: 16px;
+    border-radius: 2px;
+  }
+  
+  .login-form .ant-alert-error {
+    background: #fff1f0;
+    color: #cf1322;
+    border-color: #cf1322;
+  }
+  
