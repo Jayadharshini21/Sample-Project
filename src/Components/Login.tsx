@@ -1,18 +1,36 @@
 // src/components/LoginPage.js
 
 import React from 'react';
-import { Form, Input, Button, Alert } from 'antd';
+import { Form, Input, Button, notification} from 'antd';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import 'antd/dist/antd.css'; // Ant Design styles
 
 const Login = () => {
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
-  const onFinish = (values) => {
-    console.log('Success:', values);
+
+  const openNotification = (message: string) => {
+    notification.error({
+      message: 'Login Failed',
+      description: message,
+      placement: 'topRight'
+    });
   };
 
-  const onFinishFailed = (errorInfo) => {
+
+  const onFinish = (values: {name: string, email:string, password: string,}) => {
+    console.log('Success:', values);
+    // Redirect to home page if password is correct
+    if (values.password === 'contractio') {
+      navigate('/home', { state: { user: values } });
+    } else {
+      openNotification('Incorrect password');
+    }
+  };
+
+  const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
   };
 
@@ -39,6 +57,7 @@ const Login = () => {
             name="email"
             rules={[
               { required: true, message: 'Please enter your email' },
+              { type: 'email', message: 'Please enter a valid email' },
             ]}
           >
             <Input />

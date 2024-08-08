@@ -1,0 +1,40 @@
+/* src/components/HomePage.css */
+
+.home-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header button {
+    background-color: #1890ff;
+    border: none;
+    color: white;
+  }
+  
+  .tabs-container {
+    padding: 20px;
+  }
+  
+  .weather-tab, .user-details-tab {
+    padding: 20px;
+  }
+  
+  .weather-tab .ant-card {
+    margin-top: 20px;
+  }
+  
+  .user-details-tab .ant-card {
+    margin-top: 20px;
+  }
+  

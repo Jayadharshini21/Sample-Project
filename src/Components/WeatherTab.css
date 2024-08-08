@@ -1,0 +1,60 @@
+/* WeatherTab.css */
+
+.weather-container {
+    padding: 20px;
+    background: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .select-dropdown {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .select-dropdown .ant-select {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-dropdown .ant-select-selector {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+  
+  .select-dropdown .ant-select-arrow {
+    color: #007bff;
+  }
+  
+  .weather-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-card .ant-card-head {
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .weather-card .ant-card-body {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  .weather-card p {
+    margin: 0;
+    padding: 8px 0;
+  }
+  
+  .weather-card p:first-child {
+    font-weight: bold;
+  }
+  
